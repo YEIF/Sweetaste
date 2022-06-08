@@ -1,0 +1,192 @@
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+header {
+  margin-top: 30px;
+  justify-content: space-between;
+
+  ul li {
+    padding: 10px 30px 8px 30px;
+
+    a {
+      font-style: 16px;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+.logo {
+  width: 210px;
+  height: 40px;
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logo-all-dark.svg") no-repeat;
+}
+
+a {
+  color: $primary;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav {
+  justify-content: center;
+  align-items: center;
+}
+
+.cart {
+  width: 24px;
+  height: 24px;
+  text-align: right;
+  margin-left: 50px;
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/shopping_cart.png") no-repeat;
+}
+
+.banner {
+  margin-top: 30px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  margin-top: 60px;
+  display: flex;
+
+  .aside {
+    &-title {
+      font-size: 24px;
+      background-color: $primary;
+      color: $secondary;
+      padding: 16px 102px;
+    }
+
+    .menu {
+      &-body {
+        border: 1px solid $secondary;
+        font-size: 24px;
+
+        &.active {
+          background-color: $secondary;
+        }
+
+        a {
+          padding: 16px 64px;
+          display: block;
+
+          &:hover {
+            background-color: $secondary;
+          }
+        }
+      }
+    }
+  }
+
+  .card {
+    width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+
+    li {
+      width: 300px;
+      min-height: 315px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+
+      &:nth-child(even) {
+        margin-right: 0;
+      }
+    }
+
+    &-img {
+      position: relative;
+
+      .tag {
+        position: absolute;
+        writing-mode: vertical-lr;
+        top: 0px;
+        left: 20px;
+        font-size: 16px;
+        padding: 10px;
+        background-color: $primary;
+        color: $secondary;
+        letter-spacing: 4px;
+        font-weight: 600;
+      }
+
+      .favorite {
+        background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png);
+        width: 20px;
+        height: 18px;
+        position: absolute;
+        top: 20px;
+        right: 22px;
+      }
+    }
+
+    &-content {
+      display: flex;
+      font-size: 20px;
+
+      .name {
+        padding: 14px 33px;
+        font-weight: 300;
+        border-left: 1px solid $secondary;
+        border-right: 1px solid $secondary;
+        color: $primary;
+      }
+
+      .price {
+        padding: 14px 20px 14px 25px;
+        font-weight: 600;
+        color: $primary;
+      }
+    }
+
+    &-shopping {
+      font-size: 24px;
+      color: $primary;
+      background-color: $secondary;
+      padding: 16px 90px;
+      font-weight: 600;
+
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 60px;
+  margin-top: 10px;
+
+  li{
+    border: 1px solid $secondary;
+    display: block;
+  }
+  a{
+    font-size: 20px;
+    font-weight: 600;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.active{
+      background-color: $primary;
+      color:$secondary;
+    }
+  }
+
+}

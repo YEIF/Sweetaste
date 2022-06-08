@@ -1,0 +1,277 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header {
+  margin-top: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header ul li {
+  padding: 10px 30px 8px 30px;
+}
+
+header ul li a {
+  font-style: 16px;
+}
+
+header ul li a:hover {
+  opacity: 0.6;
+}
+
+.logo {
+  width: 210px;
+  height: 40px;
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/student-week1/logo-all-dark.svg") no-repeat;
+}
+
+a {
+  color: #3F5D45;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart {
+  width: 24px;
+  height: 24px;
+  text-align: right;
+  margin-left: 50px;
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/shopping_cart.png") no-repeat;
+}
+
+.banner {
+  margin-top: 30px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .aside-title {
+  font-size: 24px;
+  background-color: #3F5D45;
+  color: #EAF0ED;
+  padding: 16px 102px;
+}
+
+.content .aside .menu-body {
+  border: 1px solid #EAF0ED;
+  font-size: 24px;
+}
+
+.content .aside .menu-body.active {
+  background-color: #EAF0ED;
+}
+
+.content .aside .menu-body a {
+  padding: 16px 64px;
+  display: block;
+}
+
+.content .aside .menu-body a:hover {
+  background-color: #EAF0ED;
+}
+
+.content .card {
+  width: 620px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 20px;
+}
+
+.content .card li {
+  width: 300px;
+  min-height: 315px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.content .card li:nth-child(even) {
+  margin-right: 0;
+}
+
+.content .card-img {
+  position: relative;
+}
+
+.content .card-img .tag {
+  position: absolute;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  top: 0px;
+  left: 20px;
+  font-size: 16px;
+  padding: 10px;
+  background-color: #3F5D45;
+  color: #EAF0ED;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+
+.content .card-img .favorite {
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png);
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  top: 20px;
+  right: 22px;
+}
+
+.content .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+}
+
+.content .card-content .name {
+  padding: 14px 33px;
+  font-weight: 300;
+  border-left: 1px solid #EAF0ED;
+  border-right: 1px solid #EAF0ED;
+  color: #3F5D45;
+}
+
+.content .card-content .price {
+  padding: 14px 20px 14px 25px;
+  font-weight: 600;
+  color: #3F5D45;
+}
+
+.content .card-shopping {
+  font-size: 24px;
+  color: #3F5D45;
+  background-color: #EAF0ED;
+  padding: 16px 90px;
+  font-weight: 600;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+  margin-top: 10px;
+}
+
+.pagination li {
+  border: 1px solid #EAF0ED;
+  display: block;
+}
+
+.pagination a {
+  font-size: 20px;
+  font-weight: 600;
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pagination a.active {
+  background-color: #3F5D45;
+  color: #EAF0ED;
+}
+/*# sourceMappingURL=all.css.map */
